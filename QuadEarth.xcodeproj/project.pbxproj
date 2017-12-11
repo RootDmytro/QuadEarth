@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C58A0C81F97576C008C6165 /* ConnectionPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C58A0C71F97576C008C6165 /* ConnectionPool.m */; };
+		5C58A0CB1F9757D0008C6165 /* AirportsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C58A0C91F9757D0008C6165 /* AirportsDatabase.m */; };
+		5C58A0CF1F975914008C6165 /* ConnectionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C58A0CE1F975914008C6165 /* ConnectionContainer.m */; };
+		5C603F291F98EA6D00C75792 /* SQLiteStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C603F281F98EA6D00C75792 /* SQLiteStatement.m */; };
+		BE4A51081F74154C005D6EE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A51071F74154C005D6EE8 /* main.m */; };
+		BE4A510B1F74154C005D6EE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A510A1F74154C005D6EE8 /* AppDelegate.m */; };
+		BE4A510E1F74154C005D6EE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A510D1F74154C005D6EE8 /* ViewController.m */; };
+		BE4A51111F74154C005D6EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4A510F1F74154C005D6EE8 /* Main.storyboard */; };
+		BE4A51131F74154C005D6EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4A51121F74154C005D6EE8 /* Assets.xcassets */; };
+		BE4A51161F74154C005D6EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4A51141F74154C005D6EE8 /* LaunchScreen.storyboard */; };
+		BE4A511F1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A511E1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework */; };
+		BE4A51211F741BD0005D6EE8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A51201F741BD0005D6EE8 /* CoreLocation.framework */; };
+		BE4A51231F741BDE005D6EE8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A51221F741BDE005D6EE8 /* libc++.tbd */; };
+		BE4A51251F741C04005D6EE8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A51241F741C04005D6EE8 /* libz.tbd */; };
+		BE4A51271F741C11005D6EE8 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A51261F741C11005D6EE8 /* libxml2.tbd */; };
+		BE4A51291F741C1C005D6EE8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A51281F741C1C005D6EE8 /* libsqlite3.tbd */; };
+		BE4A51371F742BA8005D6EE8 /* geography-class_medres.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = BE4A51361F742BA8005D6EE8 /* geography-class_medres.mbtiles */; };
+		BE4A51431F74EEAA005D6EE8 /* WGSQLiteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A51421F74EEAA005D6EE8 /* WGSQLiteLayer.m */; };
+		BE4A51451F74F403005D6EE8 /* osmbasemap.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = BE4A51441F74F403005D6EE8 /* osmbasemap.mbtiles */; };
+		BE4A514C1F750112005D6EE8 /* AirportInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A514B1F750112005D6EE8 /* AirportInfo.m */; };
+		BE4A514F1F750352005D6EE8 /* SQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A514E1F750352005D6EE8 /* SQLiteDatabase.m */; };
+		BE4A51551F750C6C005D6EE8 /* airports.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BE4A51541F750C6C005D6EE8 /* airports.sqlite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C58A0C61F97576C008C6165 /* ConnectionPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionPool.h; sourceTree = "<group>"; };
+		5C58A0C71F97576C008C6165 /* ConnectionPool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionPool.m; sourceTree = "<group>"; };
+		5C58A0C91F9757D0008C6165 /* AirportsDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirportsDatabase.m; sourceTree = "<group>"; };
+		5C58A0CA1F9757D0008C6165 /* AirportsDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirportsDatabase.h; sourceTree = "<group>"; };
+		5C58A0CD1F975914008C6165 /* ConnectionContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionContainer.h; sourceTree = "<group>"; };
+		5C58A0CE1F975914008C6165 /* ConnectionContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionContainer.m; sourceTree = "<group>"; };
+		5C58A0D01F9766F6008C6165 /* AirportsDatabaseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirportsDatabaseProtocol.h; sourceTree = "<group>"; };
+		5C603F271F98EA6D00C75792 /* SQLiteStatement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLiteStatement.h; sourceTree = "<group>"; };
+		5C603F281F98EA6D00C75792 /* SQLiteStatement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteStatement.m; sourceTree = "<group>"; };
+		BE4A51031F74154C005D6EE8 /* QuadEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4A51071F74154C005D6EE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE4A51091F74154C005D6EE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE4A510A1F74154C005D6EE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE4A510C1F74154C005D6EE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE4A510D1F74154C005D6EE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE4A51101F74154C005D6EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE4A51121F74154C005D6EE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE4A51151F74154C005D6EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE4A51171F74154C005D6EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4A511E1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WhirlyGlobeMaplyComponent.framework; sourceTree = "<group>"; };
+		BE4A51201F741BD0005D6EE8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BE4A51221F741BDE005D6EE8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BE4A51241F741C04005D6EE8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BE4A51261F741C11005D6EE8 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		BE4A51281F741C1C005D6EE8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BE4A51361F742BA8005D6EE8 /* geography-class_medres.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class_medres.mbtiles"; sourceTree = "<group>"; };
+		BE4A51411F74EEAA005D6EE8 /* WGSQLiteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGSQLiteLayer.h; sourceTree = "<group>"; };
+		BE4A51421F74EEAA005D6EE8 /* WGSQLiteLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGSQLiteLayer.m; sourceTree = "<group>"; };
+		BE4A51441F74F403005D6EE8 /* osmbasemap.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = osmbasemap.mbtiles; sourceTree = "<group>"; };
+		BE4A514A1F750112005D6EE8 /* AirportInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AirportInfo.h; path = ../AirportInfo.h; sourceTree = "<group>"; };
+		BE4A514B1F750112005D6EE8 /* AirportInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AirportInfo.m; path = ../AirportInfo.m; sourceTree = "<group>"; };
+		BE4A514D1F750352005D6EE8 /* SQLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDatabase.h; sourceTree = "<group>"; };
+		BE4A514E1F750352005D6EE8 /* SQLiteDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDatabase.m; sourceTree = "<group>"; };
+		BE4A51541F750C6C005D6EE8 /* airports.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = airports.sqlite; path = HelloEarth/airports.sqlite; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE4A51001F74154C005D6EE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4A51291F741C1C005D6EE8 /* libsqlite3.tbd in Frameworks */,
+				BE4A51271F741C11005D6EE8 /* libxml2.tbd in Frameworks */,
+				BE4A51251F741C04005D6EE8 /* libz.tbd in Frameworks */,
+				BE4A51231F741BDE005D6EE8 /* libc++.tbd in Frameworks */,
+				BE4A51211F741BD0005D6EE8 /* CoreLocation.framework in Frameworks */,
+				BE4A511F1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C58A0CC1F9758F6008C6165 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				5C58A0CA1F9757D0008C6165 /* AirportsDatabase.h */,
+				5C58A0C91F9757D0008C6165 /* AirportsDatabase.m */,
+				5C58A0C61F97576C008C6165 /* ConnectionPool.h */,
+				5C58A0C71F97576C008C6165 /* ConnectionPool.m */,
+				5C58A0CD1F975914008C6165 /* ConnectionContainer.h */,
+				5C58A0CE1F975914008C6165 /* ConnectionContainer.m */,
+				5C603F271F98EA6D00C75792 /* SQLiteStatement.h */,
+				5C603F281F98EA6D00C75792 /* SQLiteStatement.m */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		BE4A50FA1F74154C005D6EE8 = {
+			isa = PBXGroup;
+			children = (
+				BE4A51541F750C6C005D6EE8 /* airports.sqlite */,
+				BE4A51441F74F403005D6EE8 /* osmbasemap.mbtiles */,
+				BE4A51361F742BA8005D6EE8 /* geography-class_medres.mbtiles */,
+				BE4A51051F74154C005D6EE8 /* HelloEarth */,
+				BE4A51041F74154C005D6EE8 /* Products */,
+				BE4A511D1F741BC5005D6EE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE4A51041F74154C005D6EE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE4A51031F74154C005D6EE8 /* QuadEarth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE4A51051F74154C005D6EE8 /* HelloEarth */ = {
+			isa = PBXGroup;
+			children = (
+				BE4A51091F74154C005D6EE8 /* AppDelegate.h */,
+				BE4A510A1F74154C005D6EE8 /* AppDelegate.m */,
+				BE4A510C1F74154C005D6EE8 /* ViewController.h */,
+				BE4A510D1F74154C005D6EE8 /* ViewController.m */,
+				5C58A0D01F9766F6008C6165 /* AirportsDatabaseProtocol.h */,
+				BE4A510F1F74154C005D6EE8 /* Main.storyboard */,
+				BE4A51121F74154C005D6EE8 /* Assets.xcassets */,
+				BE4A51141F74154C005D6EE8 /* LaunchScreen.storyboard */,
+				BE4A51171F74154C005D6EE8 /* Info.plist */,
+				BE4A514A1F750112005D6EE8 /* AirportInfo.h */,
+				BE4A514B1F750112005D6EE8 /* AirportInfo.m */,
+				BE4A514D1F750352005D6EE8 /* SQLiteDatabase.h */,
+				BE4A514E1F750352005D6EE8 /* SQLiteDatabase.m */,
+				5C58A0CC1F9758F6008C6165 /* DB */,
+				BE4A51411F74EEAA005D6EE8 /* WGSQLiteLayer.h */,
+				BE4A51421F74EEAA005D6EE8 /* WGSQLiteLayer.m */,
+				BE4A51061F74154C005D6EE8 /* Supporting Files */,
+			);
+			path = HelloEarth;
+			sourceTree = "<group>";
+		};
+		BE4A51061F74154C005D6EE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE4A51071F74154C005D6EE8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE4A511D1F741BC5005D6EE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE4A51281F741C1C005D6EE8 /* libsqlite3.tbd */,
+				BE4A51261F741C11005D6EE8 /* libxml2.tbd */,
+				BE4A51241F741C04005D6EE8 /* libz.tbd */,
+				BE4A51221F741BDE005D6EE8 /* libc++.tbd */,
+				BE4A51201F741BD0005D6EE8 /* CoreLocation.framework */,
+				BE4A511E1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE4A51021F74154C005D6EE8 /* QuadEarth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4A511A1F74154C005D6EE8 /* Build configuration list for PBXNativeTarget "QuadEarth" */;
+			buildPhases = (
+				BE4A50FF1F74154C005D6EE8 /* Sources */,
+				BE4A51001F74154C005D6EE8 /* Frameworks */,
+				BE4A51011F74154C005D6EE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuadEarth;
+			productName = HelloEarth;
+			productReference = BE4A51031F74154C005D6EE8 /* QuadEarth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE4A50FB1F74154C005D6EE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "HW Corporation";
+				TargetAttributes = {
+					BE4A51021F74154C005D6EE8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = NV9VPPKKCX;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = BE4A50FE1F74154C005D6EE8 /* Build configuration list for PBXProject "QuadEarth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE4A50FA1F74154C005D6EE8;
+			productRefGroup = BE4A51041F74154C005D6EE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE4A51021F74154C005D6EE8 /* QuadEarth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE4A51011F74154C005D6EE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4A51551F750C6C005D6EE8 /* airports.sqlite in Resources */,
+				BE4A51451F74F403005D6EE8 /* osmbasemap.mbtiles in Resources */,
+				BE4A51371F742BA8005D6EE8 /* geography-class_medres.mbtiles in Resources */,
+				BE4A51161F74154C005D6EE8 /* LaunchScreen.storyboard in Resources */,
+				BE4A51131F74154C005D6EE8 /* Assets.xcassets in Resources */,
+				BE4A51111F74154C005D6EE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE4A50FF1F74154C005D6EE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4A514F1F750352005D6EE8 /* SQLiteDatabase.m in Sources */,
+				5C58A0CF1F975914008C6165 /* ConnectionContainer.m in Sources */,
+				5C58A0C81F97576C008C6165 /* ConnectionPool.m in Sources */,
+				BE4A510E1F74154C005D6EE8 /* ViewController.m in Sources */,
+				BE4A510B1F74154C005D6EE8 /* AppDelegate.m in Sources */,
+				BE4A514C1F750112005D6EE8 /* AirportInfo.m in Sources */,
+				5C603F291F98EA6D00C75792 /* SQLiteStatement.m in Sources */,
+				BE4A51081F74154C005D6EE8 /* main.m in Sources */,
+				BE4A51431F74EEAA005D6EE8 /* WGSQLiteLayer.m in Sources */,
+				5C58A0CB1F9757D0008C6165 /* AirportsDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE4A510F1F74154C005D6EE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4A51101F74154C005D6EE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE4A51141F74154C005D6EE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4A51151F74154C005D6EE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE4A51181F74154C005D6EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE4A51191F74154C005D6EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE4A511B1F74154C005D6EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = NV9VPPKKCX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = /Users/antonsmyshliaiev/rep/HelloEarth/WhirlyGlobeMaplyComponent.framework/Headers;
+				INFOPLIST_FILE = HelloEarth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hw.coursera.HelloEarth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "faec7460-9c00-4883-9594-9e15ce316910";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
+			};
+			name = Debug;
+		};
+		BE4A511C1F74154C005D6EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = NV9VPPKKCX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = /Users/antonsmyshliaiev/rep/HelloEarth/WhirlyGlobeMaplyComponent.framework/Headers;
+				INFOPLIST_FILE = HelloEarth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hw.coursera.HelloEarth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "faec7460-9c00-4883-9594-9e15ce316910";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE4A50FE1F74154C005D6EE8 /* Build configuration list for PBXProject "QuadEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4A51181F74154C005D6EE8 /* Debug */,
+				BE4A51191F74154C005D6EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4A511A1F74154C005D6EE8 /* Build configuration list for PBXNativeTarget "QuadEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4A511B1F74154C005D6EE8 /* Debug */,
+				BE4A511C1F74154C005D6EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE4A50FB1F74154C005D6EE8 /* Project object */;
+}
