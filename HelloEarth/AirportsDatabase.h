@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WhirlyGlobeMaplyComponent/WhirlyGlobeComponent.h>
 #import "AirportsDatabaseProtocol.h"
 
 

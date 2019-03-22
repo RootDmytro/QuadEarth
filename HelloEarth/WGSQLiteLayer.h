@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WhirlyGlobeMaplyComponent/WhirlyGlobeComponent.h>
+#import <WhirlyGlobe/MaplyQuadPagingLayer.h>
 #import "SQLiteDatabase.h"
 
 @interface WGSQLiteLayer : NSObject <MaplyPagingDelegate>

@@ -17,7 +17,6 @@
 		BE4A51111F74154C005D6EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4A510F1F74154C005D6EE8 /* Main.storyboard */; };
 		BE4A51131F74154C005D6EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4A51121F74154C005D6EE8 /* Assets.xcassets */; };
 		BE4A51161F74154C005D6EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4A51141F74154C005D6EE8 /* LaunchScreen.storyboard */; };
-		BE4A511F1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A511E1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework */; };
 		BE4A51211F741BD0005D6EE8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A51201F741BD0005D6EE8 /* CoreLocation.framework */; };
 		BE4A51231F741BDE005D6EE8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A51221F741BDE005D6EE8 /* libc++.tbd */; };
 		BE4A51251F741C04005D6EE8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4A51241F741C04005D6EE8 /* libz.tbd */; };
@@ -29,6 +28,7 @@
 		BE4A514C1F750112005D6EE8 /* AirportInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A514B1F750112005D6EE8 /* AirportInfo.m */; };
 		BE4A514F1F750352005D6EE8 /* SQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A514E1F750352005D6EE8 /* SQLiteDatabase.m */; };
 		BE4A51551F750C6C005D6EE8 /* airports.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BE4A51541F750C6C005D6EE8 /* airports.sqlite */; };
+		F7DE1C2E135475B07FCFC8D3 /* libPods-QuadEarth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1EE8D6C9600B27A0EF5308B /* libPods-QuadEarth.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +51,6 @@
 		BE4A51121F74154C005D6EE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE4A51151F74154C005D6EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE4A51171F74154C005D6EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE4A511E1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WhirlyGlobeMaplyComponent.framework; sourceTree = "<group>"; };
 		BE4A51201F741BD0005D6EE8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BE4A51221F741BDE005D6EE8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		BE4A51241F741C04005D6EE8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -66,6 +65,9 @@
 		BE4A514D1F750352005D6EE8 /* SQLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDatabase.h; sourceTree = "<group>"; };
 		BE4A514E1F750352005D6EE8 /* SQLiteDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDatabase.m; sourceTree = "<group>"; };
 		BE4A51541F750C6C005D6EE8 /* airports.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = airports.sqlite; path = HelloEarth/airports.sqlite; sourceTree = "<group>"; };
+		D1EE8D6C9600B27A0EF5308B /* libPods-QuadEarth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuadEarth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A0BB0C778CE36D38F8AB8F /* Pods-QuadEarth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuadEarth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuadEarth/Pods-QuadEarth.debug.xcconfig"; sourceTree = "<group>"; };
+		F5E293EA0042584DE1F29433 /* Pods-QuadEarth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuadEarth.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuadEarth/Pods-QuadEarth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,7 @@
 				BE4A51251F741C04005D6EE8 /* libz.tbd in Frameworks */,
 				BE4A51231F741BDE005D6EE8 /* libc++.tbd in Frameworks */,
 				BE4A51211F741BD0005D6EE8 /* CoreLocation.framework in Frameworks */,
-				BE4A511F1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework in Frameworks */,
+				F7DE1C2E135475B07FCFC8D3 /* libPods-QuadEarth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +111,7 @@
 				BE4A51051F74154C005D6EE8 /* HelloEarth */,
 				BE4A51041F74154C005D6EE8 /* Products */,
 				BE4A511D1F741BC5005D6EE8 /* Frameworks */,
+				C898541CC01AB5546E7BF1AA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,9 +163,18 @@
 				BE4A51241F741C04005D6EE8 /* libz.tbd */,
 				BE4A51221F741BDE005D6EE8 /* libc++.tbd */,
 				BE4A51201F741BD0005D6EE8 /* CoreLocation.framework */,
-				BE4A511E1F741BC5005D6EE8 /* WhirlyGlobeMaplyComponent.framework */,
+				D1EE8D6C9600B27A0EF5308B /* libPods-QuadEarth.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C898541CC01AB5546E7BF1AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3A0BB0C778CE36D38F8AB8F /* Pods-QuadEarth.debug.xcconfig */,
+				F5E293EA0042584DE1F29433 /* Pods-QuadEarth.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE4A511A1F74154C005D6EE8 /* Build configuration list for PBXNativeTarget "QuadEarth" */;
 			buildPhases = (
+				A1BD1D18A050A16CF5983034 /* [CP] Check Pods Manifest.lock */,
 				BE4A50FF1F74154C005D6EE8 /* Sources */,
 				BE4A51001F74154C005D6EE8 /* Frameworks */,
 				BE4A51011F74154C005D6EE8 /* Resources */,
+				A1DF7469640F2624A15EBAD4 /* [CP] Embed Pods Frameworks */,
+				9F5A9530DA8593B311782C24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +249,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F5A9530DA8593B311782C24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuadEarth/Pods-QuadEarth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1BD1D18A050A16CF5983034 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuadEarth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1DF7469640F2624A15EBAD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuadEarth/Pods-QuadEarth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE4A50FF1F74154C005D6EE8 /* Sources */ = {
@@ -369,6 +435,7 @@
 		};
 		BE4A511B1F74154C005D6EE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A0BB0C778CE36D38F8AB8F /* Pods-QuadEarth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -378,9 +445,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				"HEADER_SEARCH_PATHS[arch=*]" = /Users/antonsmyshliaiev/rep/HelloEarth/WhirlyGlobeMaplyComponent.framework/Headers;
 				INFOPLIST_FILE = HelloEarth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hw.coursera.HelloEarth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,6 +457,7 @@
 		};
 		BE4A511C1F74154C005D6EE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E293EA0042584DE1F29433 /* Pods-QuadEarth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -400,9 +467,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				"HEADER_SEARCH_PATHS[arch=*]" = /Users/antonsmyshliaiev/rep/HelloEarth/WhirlyGlobeMaplyComponent.framework/Headers;
 				INFOPLIST_FILE = HelloEarth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hw.coursera.HelloEarth;
 				PRODUCT_NAME = "$(TARGET_NAME)";

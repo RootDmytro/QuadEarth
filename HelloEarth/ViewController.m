@@ -12,7 +12,9 @@
 #import "AirportsDatabase.h"
 #import "AirportInfo.h"
 
-#import <WhirlyGlobeMaplyComponent/WhirlyGlobeComponent.h>
+#import <WhirlyGlobe/WhirlyGlobeViewController.h>
+#import <WhirlyGlobe/MaplyMBTileSource.h>
+#import <WhirlyGlobe/MaplyMarker.h>
 
 @interface ViewController ()
 
@@ -37,21 +39,9 @@
     
     // and thirty fps if we can get it ­ change this to 3 if you find your app is struggling
     self.globeViewController.frameInterval = 2;
-    
-    // set up the data source
-    MaplyMBTileSource *tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:@"osmbasemap"];
-    
-    // set up the layer
-    MaplyQuadImageTilesLayer *layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys
-																				 tileSource:tileSource];
-    layer.handleEdges = (self.globeViewController != nil);
-    layer.coverPoles = (self.globeViewController != nil);
-    layer.requireElev = false;
-    layer.waitLoad = false;
-    layer.drawPriority = 0;
-    layer.singleLevelLoading = false;
-    [self.globeViewController addLayer:layer];
-    
+	
+	[self addBasemap];
+	
     // start up over San Francisco, center of the universe
     if (self.globeViewController != nil) {
         self.globeViewController.height = 0.8;
@@ -62,16 +52,31 @@
     
     
     [self setupCartoDBLayer:self.globeViewController];
-    
+	
 //    NSArray *airports = [SQLiteDatabase database].getAirports;
 //    for (AirportInfo *info in airports) {
 //        NSLog(@"%d: %@, %.2f, %.2f", info.uniqueId, info.name, info.lat, info.lon);
 //    }
+	
 }
 
+- (void)addBasemap {
+	// set up the data source
+	MaplyMBTileSource *tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:@"osmbasemap"];
+	
+	// set up the layer
+	MaplyQuadImageTilesLayer *layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys
+																				 tileSource:tileSource];
+	layer.handleEdges = true;
+	layer.coverPoles = true;
+	layer.requireElev = false;
+	layer.waitLoad = false;
+	layer.drawPriority = 0;
+	layer.singleLevelLoading = false;
+	[self.globeViewController addLayer:layer];
+}
 
-- (void)setupCartoDBLayer:(MaplyBaseViewController *)baseLayer
-{
+- (void)setupCartoDBLayer:(MaplyBaseViewController *)baseLayer {
     //    NSString *search = @"SELECT the_geom,address,ownername,numfloors FROM mn_mappluto_13v1 WHERE the_geom && ST_SetSRID(ST_MakeBox2D(ST_Point(%f, %f), ST_Point(%f, %f)), 4326) LIMIT 2000;";
     //
     WGSQLiteLayer *wgsqliteLayer = [[WGSQLiteLayer alloc] initWithDatabase:[AirportsDatabase sharedInstance]];
@@ -80,10 +85,10 @@
     MaplySphericalMercator *coordSys = [[MaplySphericalMercator alloc] initWebStandard];
     MaplyQuadPagingLayer *quadLayer = [[MaplyQuadPagingLayer alloc] initWithCoordSystem:coordSys delegate:wgsqliteLayer];
     
-    quadLayer.singleLevelLoading = true;
+    quadLayer.singleLevelLoading = false;
     quadLayer.useTargetZoomLevel = true;
     quadLayer.importance = 256*256;
-    quadLayer.useParentTileBounds = false;
+//    quadLayer.useParentTileBounds = false;
 
     
     [baseLayer addLayer:quadLayer];

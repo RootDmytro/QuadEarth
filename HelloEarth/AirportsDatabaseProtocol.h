@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WhirlyGlobeMaplyComponent/MaplyCoordinate.h>
+#import <WhirlyGlobe/MaplyCoordinate.h>
+
 
 @class AirportInfo;
 
